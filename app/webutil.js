@@ -147,8 +147,8 @@ export function readSetting(name, defaultValue) {
     if ((name in settings) || (window.chrome && window.chrome.storage)) {
         value = settings[name];
     } else {
-        value = localStorage.getItem(name);
-        settings[name] = value;
+//         value = localStorage.getItem(name);
+//         settings[name] = value;
     }
     if (typeof value === "undefined") {
         value = null;
